@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- End Basic Meta tags -->
+    <title>Precision Farming</title>
+    <link rel="icon"
+        href="https://lh3.googleusercontent.com/pw/ACtC-3ezk0TCdH4lyNNi6VKWtg4Zj0WyXjfKYk2prAn82Gw-TVCRbT4n8tBOMUgjBjk3itB2kxP1DJxMlLnDRgaTcPHVLgzImDMrOSz56cqQp_TQUQHZrK7ur0H_sVqwqrx9t5k5kFlkbbQWJdd50OCRrXTk=w570-h555-no?authuser=0" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body,
+        html {
+
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        .card {
+            border: none;
+        }
+
+        .custom-file-input {
+            background: none;
+            border-color: #82b5ac;
+        }
+
+        .custom-file-input:focus {
+            background: none;
+        }
+
+        .custom-file-input:focus {
+            border-color: #82b5ac;
+            box-shadow: none;
+        }
+
+        ul {
+            list-style: none;
+            /* Remove default bullets */
+        }
+
+        .listmast li::before {
+            content: "\2022";
+            /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: #82b5ac;
+            /* Change the color */
+            font-weight: bold;
+            /* If you want it to be bold */
+            display: inline-block;
+            /* Needed to add space between the bullet and the text */
+            width: 1em;
+            /* Also needed for space (tweak if needed) */
+            margin-left: -1em;
+            /* Also needed for space (tweak if needed) */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#82b5ac">
+        <button style="border: none; outline: none;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img
+                src="https://lh3.googleusercontent.com/pw/ACtC-3c3Qq9YMEZpAvHArEr-4Hvde5F4SHhgmtpNeGyaBbA4PwRWqemuzcWNSbAXyRIif4n78asVRGIbl7eoIQzRseag6HT8wbYanHgoMXIhEA0p-JjBnzwLCFrampuN_K8la--qDCsFsVZkldgjmJNpCB3I=w570-h555-no?authuser=0"
+                width="50" height="50"></a>
+
+
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center text-lg-left">
+                <li class="nav-item active mx-3">
+                    <a class="nav-link" href="#about">About</span></a>
+                </li>
+                <li class="nav-item active mx-3">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="jumbotron text-center" style="background-color: white;">
+            <div class="container">
+                <h1 class="display-4" style="font-weight: 800; color:#82b5ac;">
+                    Agri Vision
+                </h1>
+                <p style="font-size: 18px; font-style: italic;">
+                    The Doctor for your crops and plants.
+                </p>
+                <p style="font-weight: 400;" class="lead">Created by <strong>Team Strickers</strong>.
+                </p>
+
+            </div>
+        </div>
+
+            
+
+
+        <div class="row justify-content-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
+
+            <div class="col-12 col-lg-6">
+                <section class="card px-5 pt-5" id="contact" data-aos="zoom-in" data-aos-duration="2000"
+                    style="background: none;">
+                    <div class="text-center mb-5 sec-title centered">
+                        <h1 class="heads contact-us"><i class="fa fa-leaf" style="color:#82b5ac" aria-hidden="true"></i>
+                        </h1>
+                        <p class="card-text">Upload the picture (jpg/png) of the plant you wish to examine for diseases.
+                        </p>
+
+                    </div>
+                    <form method="post" action="result.html" enctype='multipart/form-data'>
+                        <div class="custom-file">
+                            <input type="file" name="file" class="custom-file-input" id="customFile" required>
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <div class="text-center my-4">
+                            <button type="submit"
+                                style="background: none; border-color: #82b5ac; font-weight: 500; color: #82b5ac;"
+                                class="btn"><i class="fa fa-send-o"></i> Upload</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="col-12 col-lg-6">
+                <div class="text-center">
+                    <h1 class="heads mt-2"><span style="color:#82b5ac;font-weight: 700;">P</span>lants</h1>
+                    <p class="my-3 mx-2">(Only the following plants can be examined due to limitations in the dataset,
+                        we will be adding more plants in the latter future <i class="fa fa-smile-o"
+                            style="color:#82b5ac" aria-hidden="true"></i>.)</p>
+                </div>
+
+                <ul class="listmast row mx-5">
+                    <div class="col-4">
+                        <li> Apple </li>
+                        <li> Blueberry </li>
+                        <li> Cherry </li>
+                        <li> Orange </li>
+                        
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+        <hr id="about">
+        <section class="mt-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="text-center mb-5 sec-title centered">
+                <h1 class="heads mt-2" data-aos="zoom-in" data-aos-duration="1000"><span
+                        style="color:#82b5ac;font-weight: 700;">A</span>bout</h1>
+
+            </div>
+            <p>
+                An AI web based application to help the farmers make sure their crops and plants are healthy & fit,
+                detect the disease from the plant's pictures and recommend natural remedies and prevention.
+            </p>
+
+
+
+        </section>
+
+        <hr>
+        <section class="mt-5" data-aos="fade-up" data-aos-duration="2000" id="team">
+            <div class="text-center mb-5 sec-title centered">
+                <h1 class="heads mt-2" data-aos="zoom-in" data-aos-duration="1000"><span
+                        style="color:#82b5ac;font-weight: 700;">T</span>eam</h1>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 col-lg-3">
+                    <div class="card">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Balaji</h5>
+                            <p><a style="text-decoration:none;color:#82b5ac "
+                                    
+                                    href="https://www.linkedin.com/in/n-balaji-50bb77257/"><i
+                                        class="fa fa-linkedin mx-2"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-3">
+                    <div class="card">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dhineshkumar</h5>
+                            <p><a style="text-decoration:none;color:#82b5ac "
+                                    href="https://www.linkedin.com/in/dhinesh-kumar-564657257/"><i
+                                        class="fa fa-linkedin mx-2"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-3">
+                    <div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jaishankar</h5>
+                            <p><a style="text-decoration:none;color:#82b5ac "
+                                    href="https://www.linkedin.com/in/jaisankar-k-6327b9257/"><i
+                                        class="fa fa-linkedin mx-2"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <hr>
+        
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $('#customFile').on('change', function () {
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+    <script>
+        function redirectToResults() {
+            const fileInput = document.getElementById("fileUpload");
+            if (!fileInput.files[0]) {
+                alert("Please upload an image file!");
+                return;
+            }
+
+            // Save remedies to local storage (or query parameters)
+            const remedies = [
+                "Prune the affected areas of the leaf to prevent disease spread.",
+                "Apply a fungicide containing copper or sulfur to combat infections.",
+                "Ensure proper irrigation to avoid waterlogging or over-drying.",
+                "Maintain a balanced supply of nutrients to strengthen the plant.",
+                "Monitor your apple trees regularly to detect early signs of disease."
+            ];
+            localStorage.setItem("remedies", JSON.stringify(remedies));
+
+            // Redirect to the results page
+            window.location.href = "result.html";
+        }
+    </script>
+</body>
+
+</html>

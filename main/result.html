@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2d8f6f;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Results</h1>
+        <p>Here are the remedies and prevention measures for the detected disease:</p>
+        <ul id="remedyList"></ul>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        // Retrieve remedies from local storage
+        const remedies = JSON.parse(localStorage.getItem("remedies"));
+        const remedyList = document.getElementById("remedyList");
+
+        if (remedies) {
+            remedies.forEach((remedy) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = remedy;
+                remedyList.appendChild(listItem);
+            });
+        } else {
+            remedyList.innerHTML = "<li>No data available.</li>";
+        }
+
+        // Go back to the main page
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
